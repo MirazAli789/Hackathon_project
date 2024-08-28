@@ -26,6 +26,9 @@
     transition: opacity 0.3s ease-in-out;
 }
 
+.result-box.animate {
+    animation: fadeInBounce 1s ease-in-out forwards;
+}
 
 body {
     margin: 0;
@@ -94,40 +97,7 @@ header h1 {
     box-sizing: border-box;
 }
 
-/* .result-box {
-    padding: 15px;
-    background: #f9fafb;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    color: red;
-    opacity: 0; 
-    animation: fadeInBounce 1s ease-in-out forwards;
-} */
-
-#info {
-    background: #eff1f7;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #888;
-}
-
-footer strong {
-    color: #5c67f2;
-}
-
-/* Media Queries for Mobile Devices */
-/* make it more responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
