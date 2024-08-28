@@ -42,5 +42,22 @@
     "pea": "1,500 liters/kg",
     "quinoa": "2,000 liters/kg",
     "sorghum": "1,200 liters/kg",
-    "millet": "1,800 liters/kg"
+    "millet": "1,800 liters/kg",
+    "corn": "900 liters/kg",
+    "toor_dal": "2,500 liters/kg",
+    "urad_dal": "3,000 liters/kg",
+    "moong_dal": "2,000 liters/kg",
+    "groundnut": "3,100 liters/kg",
+    "sunflower": "2,000 liters/kg",
+    "sesame": "2,000 liters/kg",
+    "soybean": "2,150 liters/kg",
+    "guava": "600 liters/kg",
+    "pomegranate": "600 liters/kg",
+    "papaya": "350 liters/kg",
+    "brinjal": "375 liters/kg",
+    "beans": "500 liters/kg",
+    "beetroot": "450 liters/kg",
+    "turmeric": "1,800 liters/kg",
+    "coriander": "1,500 liters/kg",
+    "black_pepper": "2,500 liters/kg"
 }
