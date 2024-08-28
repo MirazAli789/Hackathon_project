@@ -1,110 +1,138 @@
-@keyframes fadeInBounce {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #f2f2f2;
+    --text-color: #333;
+    --highlight-color: #ff6f61;
+    --background-color: #f7f9fc;
 }
 
-.result-box {
-    padding: 15px;
-    background: #f9fafb;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    color: red;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out;
-}
-
-.result-box.animate {
-    animation: fadeInBounce 1s ease-in-out forwards;
-}
-
-body {
+/* Basic Reset */
+body, h1, h2, p {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #f4f4f9;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px; 
-    box-sizing: border-box;
 }
 
+/* Container Styles */
 .container {
     background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     width: 100%;
-    box-sizing: border-box;
 }
 
+/* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 header h1 {
-    font-size: 24px;
-    color: #5c67f2;
+    font-size: 28px;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
+/* Search Box Styles */
 .search-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .search-box input {
-    width: 70%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ddd;
     outline: none;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
 .search-box input:focus {
-    border-color: #5c67f2;
+    border-color: var(--primary-color);
 }
 
 .search-box button {
-    padding: 10px 15px;
-    background: #5c67f2;
-    color: #fff;
+    padding: 12px 20px;
+    background: var(--primary-color);
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
+    margin-top: 10px;
 }
 
-/* Responsive Design */
+/* Result Box Styles */
+.result-box {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f9fafb);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.result-box.animate {
+    animation: fadeInBounce 1s ease-in-out forwards;
+    transform: translateY(0); /* Ensure the result box is in the correct position */
+}
+
+.result-box:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slightly enlarge the result box on hover */
+}
+
+/* Info Section Styles */
+#info {
+    background: #f3f6fc;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer strong {
+    color: var(--primary-color);
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .search-box {
@@ -113,13 +141,10 @@ header h1 {
     }
 
     .search-box input {
-        width: 100%;
-        margin-bottom: 10px;
         font-size: 14px;
     }
 
     .search-box button {
-        width: 100%;
         font-size: 14px;
         padding: 10px;
     }
@@ -129,17 +154,17 @@ header h1 {
     }
 
     #info {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     footer {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .search-box input {
@@ -161,5 +186,21 @@ header h1 {
 
     footer {
         font-size: 10px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
