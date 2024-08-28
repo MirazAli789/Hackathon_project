@@ -8,11 +8,6 @@ The **Water Footprint Calculator** is a web application designed to provide user
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Features
 - **Search Functionality**: Users can enter the name of an agricultural product to find its water footprint.
