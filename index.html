@@ -1,0 +1,35 @@
+<!-- sample protocol for calculating the water footprint for different aggricutural products -->
+
+<!-- Created for SIH 2024 By Team Aimers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Water Footprint of Agricultural Products</h1>
+        </header>
+        <main>
+            <form class="search-box" onsubmit="searchProduct(); return false;">
+                <input type="text" id="productInput" placeholder="Enter product name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="result" class="result-box"></div>
+            <section id="info">
+                <h2>What is a Water Footprint?</h2>
+                <p>A water footprint is the total amount of water used to produce a product. Understanding this helps us be more water-conscious.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Created by<strong> Team Aimers</strong></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
