@@ -23,7 +23,6 @@ The **Water Footprint Calculator** is a web application designed to provide user
 ## Demo
 You can check out the live version of this project here: [Water Footprint Calculator Live Demo](#)
 
-![Screenshot](screenshot.png) 
 
 ## Technologies Used
 - **HTML5**: For structuring the web page.
