@@ -20,16 +20,14 @@ async function searchProduct() {
         ? `Water Footprint of ${product.charAt(0).toUpperCase() + product.slice(1)}: ${footprint}`
         : 'Product not found';
 
-    // Initially hide the result box
+    // Hide the result box initially
     resultBox.style.opacity = 0;
     resultBox.innerText = result;
     
-    // Force a reflow to restart the animation
-    void resultBox.offsetWidth; 
-
-    // Apply the animation
-    resultBox.style.animation = 'fadeInBounce 1s ease-in-out forwards';
-    resultBox.style.opacity = 1;
+    // Reset animation by removing and re-adding the class
+    resultBox.classList.remove('animate');
+    void resultBox.offsetWidth; // Trigger reflow
+    resultBox.classList.add('animate');
 }
 
 // Add event listener for the search button
